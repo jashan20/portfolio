@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const Contact = require("../models/contact")
 
 contactrouter.post('/', (req,res) => {
-    console.log(req.body);
+    // console.log(req.body);
     const { name,email,subject,message } = req.body
     if(!name){
         return res.status(422).json({
