@@ -34,14 +34,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 //Routes
-
-// app.post('/',(req,res)=>{
-//     res.send('index');
-// })
-// app.get('/',(req,res)=>{
-//     console.log("Jashan")
-// })
-
 app.use('/',contactrouter);
 
 //PORT 
