@@ -13,7 +13,7 @@ const app = express();
 
 
 // Database Connection
-mongoose.connect("mongodb://localhost:27017/Portfolio", {
+mongoose.connect(process.env.DATABASECLOUD, {
   useNewUrlParser: true
 })
 .then(() => {
